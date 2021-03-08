@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+<body>
+    <!--This is the model HTML-->
+    <div id="modal" class="modal"></div>
+    <!--This is the model HTML-->
+
+
+    <div id="select_items" class="modal_class select_items">
+        <div class="modal_wrapper">
+        <div class="topbar">Select Item</div>
+       
+            <div class="drop_style">
+                <select class="drop" name="select_item_drop" id="select_item_drop">
+                    <option value="tubes">Tubes</option>
+                    <option value="boards">Boards</option>
+                    <option value="fittings">Fittings</option>
+                    <option value="additional">Other</option>
+                  
+                  </select>
+            </div>
+
+            <div id="select_item_confirm" class = "confirmBTN">OK</div>
+
+        
+        </div>
+    </div>
+
+    <div id="select_quan" class="modal_class quan_modal">
+        <div class="modal_wrapper">
+        <div class="topbar"><span id="quan_title">Item and Quantity</span></div>
+       
+            <div class="drop_style drop_tube">
+                <select class="drop" name="quan_tube" id="quan_tube">
+                    <option value="21">21</option>
+                    <option value="16">16</option>
+                    <option value="13">13</option>
+                    <option value="10">10</option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                  
+                  </select>
+            </div>
+
+            <div class="drop_style drop_board">
+                <select class="drop" name="quan_board" id="quan_board">
+                    <option value="13">13</option>
+                    <option value="10">10</option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="2">Sole Pad</option>
+                  
+                  </select>
+            </div>
+
+            <div class="drop_style drop_fitting">
+                <select class="drop" name="quan_fitting" id="quan_fitting">
+                    <option value="double_25">Doubles 1 bag</option>
+                    <option value="double_full">Double full bin</option>
+                    <option value="double_half">Doubles half bin</option>
+                    <option value="singles_25">Clips 1 bag</option>
+                    <option value="singles_full">Clips full bin</option>
+                    <option value="singles_half">Clips half bin</option>
+                    <option value="swivels_25">Swivels 1 bag</option>
+                    <option value="swivels_full">Swivels full bin</option>
+                    <option value="swivels_half">Swivels half bin</option>
+                    <option value="sleaves_25">Sleaves 1 bag</option>
+                    <option value="sleaves_full">Sleaves full bin</option>
+                    <option value="sleaves_half">Sleaves half bin</option>
+                    <option value="jointpin_25">Joint Pin 1 bag</option>
+                    <option value="baseplate_25">Baseplate 1 bag</option>
+                    <option value="baseplate_full">Baseplate full bin</option>
+                    <option value="baseplate_half">Baseplate half bin</option>
+                    
+                    
+                  </select>
+            </div>
+
+            <div class="drop_style drop_additional">
+                <select class="drop" name="quan_additional" id="quan_additional">
+                    <option value="easyfix">Easy Fix</option>
+                    <option value="adjustable_transom">Adjustable Transoms</option>
+                  
+                  </select>
+            </div>
+
+            <div class="slidecontainer">
+                <input type="range" min="1" max="200" value="10" class="slider" id="myrange">
+            </div>
+            <span id="demo"></span>
+
+            <div id="quan_item_confirm" class = "confirmBTN">OK</div>
+
+        
+        </div>
+    </div>
+
+  
+
+  <!--Main Page code starts here /////////////////-->
+
+    <div class="header">
+        <div class="logo">Loader</div>
+        <div class="burger"><img id="burger_menu" src="images/menu.svg"/></div>
+    </div>
+    
+    <div class="notification">
+        <div class="ncontainer">
+            <div id = "notify_image" class="notify"><img src="images/greentick.svg"/></div>
+            <div  class="explain"><span id="explain_limit">Within load limit</span><div class="smaller">Load is currently <span id="display_dif">0 under limit</span> </div></div>
+        </div>
+
+    </div>
+    
+    <div class="squares">
+        <div class="weight box">
+            <div class="title"><h2>Weight</h2></div>
+            <div class="weightdisplay"><div id="weight_overlay" class="weightoverlay">5674</div></div>
+            
+
+        </div>    
+        
+        <div class="wagon box">
+            <div class ="wagon_title"><h2>Wagon</h2></div>
+            <div class = "wagon_container">
+                <div id="three_five" class ="wagonb three_five">3.5</div>            
+                <div id="seven_five" class ="wagonb seven_five">7.5</div>
+                <div id="eighteen" class ="wagonb eighteen">18</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="load" class="load">
+        <div class="load_title_container">
+            <div class="load_title">Load</div>
+            <div id="plusBtn" class="plus_button"><img src="images/add.svg" alt="plus symbol"></div>
+        </div>
+
+        <div class="item_container item100">
+            <div class="item_image"><img src="https://via.placeholder.com/40"></div>
+            <div class="item_description"><span id="item_description">21 Ft tube</span><div><span id="item_quantity">x 200</span></div></div>
+            <div class="item_weight"><span id="item_weight">300kg</span></div>
+            <div class="item_bin"><img src="images/bin.svg"></div>
+         </div> 
+
+       
+
+       
+
+    </div>
+
+    <script type='text/javascript' > 
+        var wagon_load;
+        
+        let Items;
+        let loadlist = [];
+        
+    </script>
+
+    <script type="text/javascript" src="js/weightLogic.js"></script>
+    <script type="text/javascript" src="js/notify.js"></script>
+    <script type="text/javascript" src="js/weightTables.js"></script>
+    <script type="text/javascript" src="js/loadLogic.js"></script>
+    <script type="text/javascript" src="js/toggle.js"></script>
+    <script type="text/javascript" src="js/Itemlogic.js"></script>
+    <script type="text/javascript" src="js/binlogic.js"></script>
+
+    
+    
+
+
+
+</body>
+</html>
