@@ -30,19 +30,19 @@ function getImage(loadListIndex) {
     switch (operator) {
 
         case 'tubes':
-            imageurl = '../images/tube40.png';
+            imageurl = './images/tube40.png';
         break;
 
         case 'boards':
-            imageurl = '../images/board40.png';
+            imageurl = './images/board40.png';
         break;
 
         case 'fittings':
-            imageurl = '../images/fitting40.png';
+            imageurl = './images/fitting40.png';
         break;
 
         case 'additional':
-            imageurl = '../images/additional40.png';
+            imageurl = './images/additional40.png';
         break;
     }
     return imageurl
