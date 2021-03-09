@@ -10,6 +10,12 @@ function binload(rawID) {
     var remove = (loadList.splice(finalID,1));
     console.log(loadList);
 
+    if (loadList.length == 0) {
+        console.log('Table is empty');
+        emptytable();
+    }
+
+
     updateLoadlist();
 }
 

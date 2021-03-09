@@ -1,8 +1,8 @@
+var weightOverlay = document.getElementById('weight_overlay');
 
 
 function totalWeight(table) {
     
-    var weightOverlay = document.getElementById('weight_overlay');
     var ongoingTotal = 0;
     
     for (tt = 0; tt < table.length; tt++) {
@@ -22,10 +22,10 @@ function totalWeight(table) {
 
 function emptytable() {
 
-    var weightOverlay = document.getElementById('weight_overlay');
     weightOverlay.innerHTML = ('0');
     uh = 0;
     notify_update(uh);
+    console.log('IS THIS TABLE NULL')
 
 }
 

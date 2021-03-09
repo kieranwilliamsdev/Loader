@@ -154,10 +154,6 @@ function updateLoadlist() {
 
         elPosition.appendChild(elBin);
 
-        if (loadList == null) {
-            emptytable();
-        }
-
         totalWeight(loadList);
     }
 }
