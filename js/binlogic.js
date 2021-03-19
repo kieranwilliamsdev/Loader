@@ -11,7 +11,6 @@ function binload(rawID) {
     console.log(loadList);
 
     if (loadList.length == 0) {
-        console.log('Table is empty');
         emptytable();
     }
 

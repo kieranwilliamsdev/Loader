@@ -13,6 +13,7 @@ function totalWeight(table) {
         ongoingTotal = 9999;
     }
 
+    
     console.log('the weight' + ongoingTotal);
     weightOverlay.innerHTML = (ongoingTotal.toFixed(0));
 
@@ -25,9 +26,8 @@ function emptytable() {
     weightOverlay.innerHTML = ('0');
     uh = 0;
     notify_update(uh);
-    console.log('IS THIS TABLE NULL')
-
 }
+
 
 //a function to recieve the total weight
 function getWeight() {

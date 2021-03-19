@@ -8,11 +8,11 @@ function notify_update(tweight) {
          diff = tweight - wagon_load;
          explainLimit.innerHTML = ('Over loaded');
          dif_span.innerHTML = (diff.toFixed(0))+('kg overweight');
-         notifyImage.innerHTML = ('<img src=\"images/redcross.svg\" alt=\"green tick\"/>');
+         notifyImage.innerHTML = ('<img src=\"images/redcross.svg\" alt=\"red cross\"/>');
 
      }
 
-     if (tweight < wagon_load) {
+     if (tweight <= wagon_load) {
          //dont forget to change notification icon to the green tick
          diff = wagon_load - tweight;
          explainLimit.innerHTML = ('Within load limit');
