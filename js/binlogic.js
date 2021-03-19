@@ -15,7 +15,11 @@ function binload(rawID) {
     }
 
 
-    updateLoadlist();
+    //This produces the slideoout transition
+    var getItemId = ('item'+finalID);
+    var smallitem = document.getElementById(getItemId);
+    smallitem.classList.add('small');
+    setTimeout(updateLoadlist, 505);
 }
 
 elload.addEventListener('click', function(e) {

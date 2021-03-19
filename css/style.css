@@ -266,6 +266,15 @@ body {
   margin-bottom: 0.2em;
 }
 
+.small {
+  -webkit-transform: translateX(25em);
+          transform: translateX(25em);
+  -webkit-transition: -webkit-transform 0.55s ease-in-out;
+  transition: -webkit-transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
+}
+
 .item_image {
   background-color: white;
   padding: 0.2em;
