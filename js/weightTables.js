@@ -59,8 +59,6 @@ function calculateWeight (item, type, quantity) {
 
             case 'tubes':
                 genericTable = tubeTable;
-                console.log('generic table =');
-                console.log(genericTable);
             break;
 
             case 'boards':
