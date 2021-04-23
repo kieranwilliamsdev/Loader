@@ -15,6 +15,48 @@ body {
   background: linear-gradient(#4E54C8, #8F94FB);
 }
 
+.nav {
+  position: fixed;
+  content: '';
+  z-index: 999;
+  width: 50%;
+  height: 100vh;
+  background: #f5f5f5;
+  right: 0%;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .primary-nav {
+  list-style-type: none;
+  line-height: 2;
+  font-size: 1.4em;
+}
+
+.menu a, a:visited {
+  color: #4E54C8;
+  text-decoration: none;
+}
+
+.mobile-exit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 0.70em;
+}
+
+.mobile-menu-exit {
+  margin-right: .5em;
+  cursor: pointer;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
