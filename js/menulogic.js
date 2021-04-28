@@ -1,53 +1,23 @@
-function openMenu() {
-
-var createMenu = document.createElement('div');
-var firstdiv = document.getElementById('select_items');
-
-createMenu.className = 'nav';
-createMenu.id = 'menuid';
-document.body.insertBefore(createMenu, firstdiv);
-
-//Create Menu Exit Button
-var createExit = document.createElement('div');
-var menuPosition = document.getElementById('menuid');
-
-createExit.className = 'mobile-exit';
-createExit.id = 'mobilex';
-createExit.innerHTML = ('<img id=\"mobile-exit-img\" class=\"mobile-menu-exit\" src=\"images/exit.svg\" alt=\"exit navigation\">');
-
-menuPosition.appendChild(createExit);
-
-//Create Menu Section
-var createMenuItems = document.createElement('div');
-
-createMenuItems.className = 'menu';
-createMenuItems.id = 'menu';
-createMenuItems.innerHTML = ('<ul class=\"primary-nav\"><li><a href=\"#\">About</a></li><li><a href=\"#\">Specs</a></li><li><a href=\"#\">Contact</a></li></ul>');
-
-menuPosition.appendChild(createMenuItems);
-
-
-}
-
-//menu close function
-function closemenu() {
-    var close_menu = document.getElementById('mobilex');
-    var navGone = document.getElementsByClassName('nav');
-
-    console.log('fruitless check')
-    body.removeChild(navGone);
-}
-
-//burger menu open button
-
+const close_menu = document.getElementById('mobilex');
 const menu_button = document.getElementById('burger_menu');
+const navdiv = document.getElementById('nav');
+
+function closing_animation() {
+    navdiv.classList.remove('activate_block');
+}
 
 menu_button.addEventListener('click', () => {
-    console.log('button pressed');
-    openMenu();
+    console.log('open button pressed');
+    navdiv.classList.add('activate_block');
+    navdiv.classList.remove('rollout');
+
+
 })
 
 //burger cross close button
 close_menu.addEventListener('click', () => {
-    closemenu();
+    console.log('close button pressed');
+    navdiv.classList.add('rollout');
+    setTimeout(closing_animation, 505);
+    
 })
